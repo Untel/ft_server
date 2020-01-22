@@ -1,0 +1,5 @@
+FLUSH PRIVILEGES;
+CREATE DATABASE wpadda DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_ci;
+GRANT ALL ON wpadda.* TO 'addasil'@'localhost' IDENTIFIED BY 'addasil';
+FLUSH PRIVILEGES;
+
