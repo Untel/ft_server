@@ -15,7 +15,7 @@ COPY srcs/nginx.conf conf.d/nginx.conf
 
 WORKDIR /var/www/html
 COPY srcs/phpMyAdmin.tar.gz .
-RUN tar -xvf phpMyAdmin.tar.gz && mv phpMyAdmin-4.9.4-all-languages phpmyadmin && rm phpMyAdmin.tar.gz
+RUN tar -xvf phpMyAdmin.tar.gz && mv phpMyAdmin-4.9.4-all-languages phpmyadmin && rm phpMyAdmin.tar.gz && mkdir testidx
 COPY srcs/config.inc.php phpmyadmin/
 COPY srcs/req.sql /tmp
 
